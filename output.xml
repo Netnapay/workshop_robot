@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170519 16:21:59.624" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\robotframework\epit_forgotpw.robot" id="s1" name="Epit Forgotpw">
+<test id="s1-t1" name="Forgot Password">
+<kw name="Open page Register">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://epit.rd.go.th/EFILING/RegController</arg>
+<arg>browser=gc</arg>
+</arguments>
+<msg timestamp="20170519 16:22:00.045" level="INFO">Opening browser 'gc' to base url 'https://epit.rd.go.th/EFILING/RegController'</msg>
+<status status="PASS" endtime="20170519 16:22:06.797" starttime="20170519 16:22:00.044"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:22:06.798" starttime="20170519 16:22:00.043"></status>
+</kw>
+<kw name="Click link for Register">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>name=link_RegType1</arg>
+</arguments>
+<msg timestamp="20170519 16:22:06.802" level="INFO">Clicking link 'name=link_RegType1'.</msg>
+<status status="PASS" endtime="20170519 16:22:09.127" starttime="20170519 16:22:06.801"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:22:09.128" starttime="20170519 16:22:06.800"></status>
+</kw>
+<kw name="Next to Button">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=bNext</arg>
+</arguments>
+<msg timestamp="20170519 16:22:09.135" level="INFO">Clicking element 'name=bNext'.</msg>
+<status status="PASS" endtime="20170519 16:22:09.448" starttime="20170519 16:22:09.134"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:22:09.449" starttime="20170519 16:22:09.132"></status>
+</kw>
+<kw name="Alert message">
+<kw name="Get Alert Message" library="Selenium2Library">
+<doc>Returns the text of current JavaScript alert.</doc>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20170519 16:22:09.985" level="INFO">${result} = ข้อความปฏิเสธ [E011] :  กรุณาบันทึกทึกเลขประจำตัวผู้เสียภาษีอากร</msg>
+<status status="PASS" endtime="20170519 16:22:09.985" starttime="20170519 16:22:09.453"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>[E011]</arg>
+</arguments>
+<status status="PASS" endtime="20170519 16:22:09.989" starttime="20170519 16:22:09.986"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:22:09.992" starttime="20170519 16:22:09.451"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:22:09.996" critical="yes" starttime="20170519 16:22:00.040"></status>
+</test>
+<test id="s1-t2" name="Out of system">
+<kw name="Open page Register">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://epit.rd.go.th/EFILING/RegController</arg>
+<arg>browser=gc</arg>
+</arguments>
+<msg timestamp="20170519 16:22:10.020" level="INFO">Opening browser 'gc' to base url 'https://epit.rd.go.th/EFILING/RegController'</msg>
+<status status="PASS" endtime="20170519 16:22:17.163" starttime="20170519 16:22:10.019"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:22:17.163" starttime="20170519 16:22:10.017"></status>
+</kw>
+<kw name="Click link for Register">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>name=link_RegType1</arg>
+</arguments>
+<msg timestamp="20170519 16:22:17.178" level="INFO">Clicking link 'name=link_RegType1'.</msg>
+<status status="PASS" endtime="20170519 16:22:19.658" starttime="20170519 16:22:17.177"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:22:19.660" starttime="20170519 16:22:17.176"></status>
+</kw>
+<kw name="Click out Button from system">
+<kw name="Choose Cancel On Next Confirmation" library="Selenium2Library">
+<doc>Cancel will be selected the next time `Confirm Action` is used.</doc>
+<status status="PASS" endtime="20170519 16:22:19.665" starttime="20170519 16:22:19.664"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=bExit</arg>
+</arguments>
+<msg timestamp="20170519 16:22:19.667" level="INFO">Clicking element 'name=bExit'.</msg>
+<status status="PASS" endtime="20170519 16:22:20.054" starttime="20170519 16:22:19.666"></status>
+</kw>
+<kw name="Confirm Action" library="Selenium2Library">
+<doc>Dismisses currently shown confirmation dialog and returns it's message.</doc>
+<status status="PASS" endtime="20170519 16:22:20.100" starttime="20170519 16:22:20.054"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:22:20.102" starttime="20170519 16:22:19.662"></status>
+</kw>
+<status status="PASS" endtime="20170519 16:22:20.111" critical="yes" starttime="20170519 16:22:10.008"></status>
+</test>
+<status status="PASS" endtime="20170519 16:22:20.139" starttime="20170519 16:21:59.637"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Epit Forgotpw" pass="2">Epit Forgotpw</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

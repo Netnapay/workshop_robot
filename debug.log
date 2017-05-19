@@ -1,0 +1,16 @@
+[0518/143645.152:ERROR:process_reader_win.cc(114)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights.  (0xc0000022)
+[0518/143645.167:ERROR:exception_snapshot_win.cc(87)] thread ID 6932 not found in process
+[0518/143645.167:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0518/152211.672:ERROR:file_io_win.cc(163)] CreateFile C:\Users\NetnapaY\AppData\Local\Temp\scoped_dir5400_7340\Crashpad\settings.dat: The process cannot access the file because it is being used by another process. (0x20)
+[0519/095323.475:ERROR:file_io_win.cc(163)] CreateFile C:\Users\NetnapaY\AppData\Local\Temp\scoped_dir9860_19971\Crashpad\settings.dat: The process cannot access the file because it is being used by another process. (0x20)
+[0519/095609.758:ERROR:process_reader_win.cc(114)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights.  (0xc0000022)
+[0519/095609.750:ERROR:process_reader_win.cc(114)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights.  (0xc0000022)
+[0519/095609.766:ERROR:exception_snapshot_win.cc(87)] thread ID 2064 not found in process
+[0519/095609.766:ERROR:exception_snapshot_win.cc(87)] thread ID 6408 not found in process
+[0519/095609.766:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0519/095609.766:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0519/095732.914:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0519/095732.915:ERROR:process_reader_win.cc(114)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights.  (0xc0000022)
+[0519/095732.916:ERROR:exception_snapshot_win.cc(87)] thread ID 1740 not found in process
+[0519/095732.916:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0519/122223.772:ERROR:file_io_win.cc(163)] CreateFile C:\Users\NetnapaY\AppData\Local\Temp\scoped_dir504_7337\Crashpad\settings.dat: The process cannot access the file because it is being used by another process. (0x20)
